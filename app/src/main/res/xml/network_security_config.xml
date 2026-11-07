@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  A Raspberry Pi é acessada por HTTP simples na rede local (sem TLS), então o tráfego em texto claro
+  precisa ser permitido. Decisão pendente de aprovação: restringir a IPs/domínios específicos
+  ou adotar HTTPS com certificado próprio.
+-->
+<network-security-config>
+    <base-config cleartextTrafficPermitted="true" />
+</network-security-config>
